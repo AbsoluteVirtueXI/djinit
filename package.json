@@ -6,5 +6,8 @@
     "djinit": "./bin/index.js"
   },
   "author": "AbsoluteVirtueXI <absolutevirtuexi@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
 }
