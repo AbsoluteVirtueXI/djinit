@@ -8,6 +8,7 @@
   "author": "AbsoluteVirtueXI <absolutevirtuexi@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "shelljs": "^0.8.4"
   }
 }
