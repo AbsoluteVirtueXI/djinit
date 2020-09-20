@@ -1,14 +1,21 @@
 {
-  "name": "djinit",
-  "version": "1.0.0",
-  "main": "bin/index.js",
-  "bin": {
-    "djinit": "./bin/index.js"
-  },
-  "author": "AbsoluteVirtueXI <absolutevirtuexi@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "shelljs": "^0.8.4"
-  }
+    "name": "djinit",
+    "version": "0.1.0",
+    "bin": {
+        "djinit": "./bin/djinit.js"
+    },
+    "type": "module",
+    "exports": {
+        "./message": "./lib/message.js"
+    },
+    "author": "AbsoluteVirtueXI <absolutevirtuexi@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "shelljs": "^0.8.4"
+    },
+    "devDependencies": {
+        "eslint": "^7.9.0",
+        "prettier": "^2.1.2"
+    }
 }
