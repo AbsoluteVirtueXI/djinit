@@ -91,7 +91,10 @@ if (shell.cp('-Rf', `${__dirname}/../templates/.*`, '.').code != 0) {
     shell.echo(errorMessage('Copy of configuration files failed'))
     shell.exit(1)
 }
-if (shell.mv('./gitignore', './.gitignore').code != 0) {
+if (
+    shell.cp('-Rf', `${__dirname}/../templates/gitignore`, './.gitignore')
+        .code != 0
+) {
     shell.echo(errorMessage('rename of gitignore to .gitignore failed'))
     shell.exit(1)
 }
