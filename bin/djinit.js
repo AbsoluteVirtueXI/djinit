@@ -99,4 +99,15 @@ if (
     shell.exit(1)
 }
 shell.echo(successMessage('Configuration files copied'))
+
+// add 'first commit
+if (shell.exec(`git add .`).code !== 0) {
+    shell.echo(errorMessage('git add . failed'))
+    shell.exit(1)
+}
+if (shell.exec(`git commit -m "first commit"`).code !== 0) {
+    shell.echo(errorMessage('git commit -m "first commit" failed'))
+    shell.exit(1)
+}
+
 shell.echo(successMessage(`Project ${project_name} is created`))
