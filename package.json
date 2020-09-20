@@ -1,6 +1,6 @@
 {
     "name": "djinit",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "bin": {
         "djinit": "./bin/djinit.js"
     },
