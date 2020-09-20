@@ -91,5 +91,9 @@ if (shell.cp('-Rf', `${__dirname}/../templates/.*`, '.').code != 0) {
     shell.echo(errorMessage('Copy of configuration files failed'))
     shell.exit(1)
 }
+if (shell.mv('./gitignore', './.gitignore').code != 0) {
+    shell.echo(errorMessage('rename of gitignore to .gitignore failed'))
+    shell.exit(1)
+}
 shell.echo(successMessage('Configuration files copied'))
 shell.echo(successMessage(`Project ${project_name} is created`))
