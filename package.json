@@ -9,6 +9,10 @@
         "./message": "./lib/message.js"
     },
     "author": "AbsoluteVirtueXI <absolutevirtuexi@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AbsoluteVirtueXI/djinit.git"
+    },
     "license": "MIT",
     "dependencies": {
         "chalk": "^4.1.0",
