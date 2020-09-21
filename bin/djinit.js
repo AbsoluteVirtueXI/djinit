@@ -66,8 +66,9 @@ shell.echo(successMessage('project structure created'))
 let file = fs.readFileSync('package.json')
 let conf = JSON.parse(file)
 conf['type'] = 'module'
-conf['exports'] = {}
 delete conf['main']
+// Add default export
+conf['exports'] = { './': './src/' }
 let data = JSON.stringify(conf)
 fs.writeFileSync('package.json', data)
 shell.echo(successMessage('ECMAScript module is enabled'))
